@@ -1,0 +1,142 @@
+
+h1 {
+    color: aqua;
+}
+
+.klass1 {
+    color: aquamarine;
+}
+
+/* Väljer alla p som har klass1 */
+p.klass1 {
+    color: brown;
+}
+
+/* Stylea på ID */
+#mitt-ID {
+    color: blue;
+}
+
+/* Universal selektor */
+* {
+    /* margin: 0; */
+}
+
+/* Kombinera enkla selektorer */
+p, h3, h4 {
+    color: chocolate;
+}
+
+/* Välja alla p som är inne i en div */
+div p {
+    color: darkblue;
+}
+
+/* Välj alla p som ligger i en div som i sin tur ligger i en div */
+div div p {
+    color: darkolivegreen;
+}
+
+/* Träffar alla länkar som är inne i en footer över huvudtaget */
+footer a {
+    color: burlywood;
+}
+
+/* Träffar bara länkar som är direkta barn till en footer */
+footer > a {
+    color: chartreuse;
+}
+
+
+/* Träffar alla nästkommande syskon */
+/* alt gr + ^ */
+h1 ~ p {
+    color: crimson; 
+    font-weight: bold;
+}
+
+
+/* Träffar en paragraf p som kommer direkt efter en h1 */
+h1 + p {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+div {
+    background-color: brown;
+}
+
+div.meny {
+    padding: 20px;
+    background-color: blue;
+}
+
+.text {
+    color: aqua;
+}
+
+li {
+    display: inline;
+}
+
+/* Styla länkar som har attributet target */
+a[target] {
+    color: aquamarine;
+}
+
+/* Välj länkar som har attributet target med värdet _blank */
+a[target="_blank"] {
+    color: crimson;
+    font-weight: bold;
+}
+
+/* Välja alla länkar som har attributet href slutar på html */
+/* I övrigt kan "börjar på" ^= och "innehåller" *= vara av intresse
+
+*/
+a[href$="html"] {
+    font-size: 30px;
+}
+
+
+/* Pseudoklasser
+    Skrivs med kolon efter elementet
+    ex. hover för länk 
+    Kan läggas till efter en mer specifik selector ex: a[target]:hover */
+a:hover {
+    color: chartreuse;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Finns också visited, som väljer länkar som användaren redan klickat på */
+a:visited {
+    font-style: italic;
+    color: darkgreen;
+}
+
+/* Gör en border på vår tabell */
+table {
+    /* border: solid; */
+    border-collapse: collapse;
+}
+td,th {
+    border: solid;
+}
+
+/* Färgar första rader */
+tr:first-child {
+    /* background-color: aqua; */
+}
+
+tr:nth-child(odd) {
+    background-color: beige;
+}
+
+tr:nth-child(even) {
+    background-color: coral;
+}
+
+footer {
+    text-align: center;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div>
+        <div class="meny">
+            <p class="text">Hejsan hoppsan</p>
+        </div>
+    </div>
+
+    <!-- Selektorer 
+     Det som står framför klammarna: h1 {färger och sånt}
+     Enkla selektorer:
+        Element
+        Klass, ex: .klass1, p.klass1
+        ID, ex: #id1
+        *, väljer alla element i din html-fil
+
+    Enkla selektorer kan grupperas ihop med kommatecken
+
+    Kombinatorer - används för att kombinera selektorer för att
+                    kunna göra mer specifika val, valet görs baserat
+                    på elementens realtion till varandra
+    
+    Element som ligger inuti ett annat element benämns som det övre elementets "barn"
+    eller children
+
+    Kombinatorer:
+        Mellanslag, descendant, "p som ligger i en div", ex. div p {färger...}
+        "Direkt barn"/direct child, >, ex. footer > a {kod...}
+
+    
+    
+    -->
+
+    <footer>
+        <!-- Den första länken är ett "grandchild"/barnban till footer -->
+        <p>hej här är en länk <a href="">klicka på mig</a></p>
+
+        <!-- Den andra länken är ett s.k. "direct-child" av footer -->
+        <a href="">en till länk</a>
+    </footer>
+
+    <hr>
+
+    <section>
+        <p>min första paragraf</p>
+        <h1>Hej</h1>
+        <p>Underrubrik</p>
+        <p>hejsna hoppsan</p>
+
+
+    </section>
+    
+
+    <ul>
+        <li>hej</li>
+        <li>på</li>
+        <li>dig!</li>
+    </ul>
+
+
+
+    <!-- Selektorer del 2 - Attribute-selector, pseudo-classes -->
+
+    <!-- Attribut selektor 
+        går ut på att välja ett element baserat på dess attribut 
+
+    -->
+
+    <!-- Pseudoklasser
+        Går ut på att välja specifika states/tillstånd för olika element, ex. hover på länkar
+     
+    
+    -->
+
+    <hr>
+
+    <p><a href="https://www.google.se">Länk till google</a></p>
+
+    <p><a href="https://www.google.se" target="_top">Länk till google</a></p>
+
+    <p><a href="https://www.google.se" target="_parent">Länk till google</a></p>
+
+    <p><a href="sida2.html">Vår andra sida</a></p>
+
+
+    <table>
+        <tr>
+            <th>Färg</th>
+            <th>Form</th>
+            <th>Pris</th>
+        </tr>
+        <tr>
+            <td>Gul</td>
+            <td>Rund</td>
+            <td>Dyr</td>
+        </tr>
+        <tr>
+            <td>Gul</td>
+            <td>Rund</td>
+            <td>Dyr</td>
+        </tr>
+        <tr>
+            <td>Gul</td>
+            <td>Rund</td>
+            <td>Dyr</td>
+        </tr>
+
+
+    </table>
+    
+</body>
+</html>
